@@ -1,0 +1,84 @@
+body {
+    width: 45rem;
+    margin: auto;
+}
+
+form {
+    background-color: darkslategray;
+
+    margin: auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+form input {
+    width: 20%;
+    font-size: 10rem;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    border: none;
+    display: block;
+    background-color: darkslategray;
+    color: white;
+}
+
+form button {
+    width: 10rem;
+    margin: 1rem;
+    font-size: 3rem;
+    box-shadow: 0 0 0.5rem floralwhite;
+}
+
+.flex {
+    display: flex;
+    background-color: beige;
+    height: 15rem;
+}
+
+#doc {
+    text-align: center;
+    width: 5rem;
+}
+
+
+
+#msg {
+
+    width: calc(100% - 5rem);
+    text-align: center;
+    
+    padding: 1rem;
+    margin: 0;
+}
+
+#msg.small{
+    font-size: 2rem;
+    text-align: right;
+}
+
+#msg.big{
+    font-size: 10rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 45rem) {
+
+    body {
+        width: 100%;
+    }
+
+    form input{
+        font-size: 5rem;
+    }
+
+    #msg.small{
+        font-size: 2rem;
+    }
+    
+    #msg.big{
+        font-size: 6rem;
+    }
+
+}
