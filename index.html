@@ -9,20 +9,22 @@
 </head>
 
 <body>
-    <button id="newTry" onclick="newTry()">New Game</button>
+    <main>
+        <button id="newTry" onclick="newTry()">New Game</button>
+        <article>
+            <form action="">
+                <input id="first" type="number" max="9" min="0" value="0"></input>
+                <input id="second" type="number" max="9" min="0" value="0"></input>
+                <input id="third" type="number" max="9" min="0" value="0"></input>
+                <button type="button" onclick="guess()">try</button>
+            </form>
 
-    <form action="">
-        <input id="first" type="number" max="9" min="0" value="0"></input>
-        <input id="second" type="number" max="9" min="0" value="0"></input>
-        <input id="third" type="number" max="9" min="0" value="0"></input>
-        <button type="button" onclick="guess()">try</button>
-    </form>
-
-    <div class = "flex">
-        <p id="doc" > </p>
-        <p id="msg" class = "small">break the code</p>
-    </div>
-    
+            <div class="flex">
+                <p id="doc"> </p>
+                <p id="msg" class="small">break the code</p>
+            </div>
+        </article>
+    </main>
 </body>
 <script src="script.js"></script>
 

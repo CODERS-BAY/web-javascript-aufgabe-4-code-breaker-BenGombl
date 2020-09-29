@@ -34,19 +34,24 @@ form button {
 .flex {
     display: flex;
     background-color: beige;
-    height: 15rem;
+    height: 18rem;
+    
+}
+
+article{
+    box-shadow: 0 0 0.5rem dimgray;
 }
 
 #doc {
     text-align: center;
-    width: 5rem;
+    width: 15rem;
 }
 
 
 
 #msg {
 
-    width: calc(100% - 5rem);
+    width: calc(100% - 15rem);
     text-align: center;
     
     padding: 1rem;
@@ -59,7 +64,7 @@ form button {
 }
 
 #msg.big{
-    font-size: 10rem;
+    font-size: 5rem;
     text-align: center;
 }
 
@@ -74,11 +79,11 @@ form button {
     }
 
     #msg.small{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     
     #msg.big{
-        font-size: 6rem;
+        font-size: 4rem;
     }
 
 }

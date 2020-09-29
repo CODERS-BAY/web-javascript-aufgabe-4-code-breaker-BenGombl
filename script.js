@@ -1,5 +1,5 @@
 var code, user, attempt;
-var a, b, c;
+var correctNum, correctPlace;
 var gameover;
 msg = document.getElementById("msg");
 doc = document.getElementById("doc");
@@ -26,23 +26,30 @@ function guess(){
         return;
     }
     
-    correct = 0;
+    correctNum = 0;
+    correctPlace = 0;
     user = [document.getElementById("first").value, document.getElementById("second").value, document.getElementById("third").value];
     for(i = 0; i < 3; i++){
         if(user[i] == code[i]){
-            correct++;
+            correctPlace++;
         }
+        if(user[i] == code[0]||user[i] == code[1]||user[i] == code[2]){
+            correctNum++;
+        }
+        
     }
-    doc.innerHTML += "" + user[0] + " " + user[1] + " " + user[2] + " || " + correct+ "<br>";
-    if(correct == 3){
+    doc.innerHTML += "" + user[0] + " " + user[1] + " " + user[2] + " || " + correctNum + " correct | " + correctPlace + " right place<br>";
+    if(correctPlace == 3){
         msg.innerHTML = "you win!"
         msg.className = "big";
         gameover = true;
     }
-    attempt++;
-    if(attempt > 12){
+   
+    else if(attempt > 12){
         gameover = true;
         msg.innerHTML = "you lose!";
         msg.className = "big";
     }
+    
+    attempt++;
 }
